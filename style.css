@@ -1,0 +1,144 @@
+* {
+  text-align: center;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+button,
+p,
+h1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+button:hover {
+  scale: 1.1;
+  -webkit-box-shadow: 0 14px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 14px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title {
+  margin: 40px;
+}
+
+#game-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: wheat;
+  border: 40px;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.rectangle {
+  width: 8vw;
+  height: 8vh;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+
+#introduction-screen {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: wheat;
+}
+
+.game-buttons {
+  padding: 10px;
+  width: 20vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+}
+
+#hint-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: wheat;
+  border: 40px;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+#instruction-screen {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50%;
+  margin: auto;
+  background-color: wheat;
+  border: 40px;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.466);
+  text-align: center;
+  font-size: 15px;
+}
+
+@media print {
+  header,
+  footer,
+  button,
+  #introduction-screen,
+  #game-screen,
+  #noprint,
+  #hint-screen {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+  }
+  p {
+    position: relative;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}
+
+@page {
+  margin: 2cm;
+}
+/*# sourceMappingURL=style.css.map */
